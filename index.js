@@ -4,7 +4,7 @@ const constant = require('./constant')
 
 const app = express()
 
-let PORT = process.port || 5000
+let PORT = process.env.port || 5000
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
