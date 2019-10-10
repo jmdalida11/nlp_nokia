@@ -1,0 +1,24 @@
+{
+  "name": "nlp_nokia",
+  "version": "1.0.0",
+  "description": "Nokia Hackathon 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmdalida11/nlp_nokia.git"
+  },
+  "author": "JM Dalida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmdalida11/nlp_nokia/issues"
+  },
+  "homepage": "https://github.com/jmdalida11/nlp_nokia#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
