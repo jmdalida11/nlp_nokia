@@ -4,7 +4,7 @@ const constant = require('./constant')
 
 const app = express()
 
-let PORT = process.env.port || 5000
+let PORT = process.env.PORT || 5000
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -23,4 +23,4 @@ app.get('/webhook/', function(req, res){
     res.send("Wrong token")
 })
 
-app.listen(PORT, () => console.log('Express server is listening on port 5000'))
+app.listen(PORT, () => console.log('Express server is listening on port ' + PORT))
