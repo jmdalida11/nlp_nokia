@@ -10,9 +10,6 @@ let PORT = process.env.PORT || 5000
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
-//const verifyWebhook = require('./verify-webhook')
-//app.get('/', verifyWebhook);
-
 app.get('/', function(req, res){
     res.send("Hi")
 })
@@ -44,7 +41,7 @@ app.post('/webhook/', (req, res) => {
 		let sender = ev.sender.id
 		if (ev.message && ev.message.text){
 			let text = ev.message.text
-            sendMessage(sender, "Text echo : " + text)
+            sendMessage(sender, "Nokia LifeApp Team 12 : " + text)
 		}
 	}
     res.sendStatus(200)
